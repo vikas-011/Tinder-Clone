@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        width: 100%;
+        height: 100vh;
+        /* vh ==> viewport height */
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://drive.google.com/uc?id=176BpLyAQugoQkLgCkCcWat_u6AcmgbXs");
+        /* 0.1 - 0.9 - 1 */
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+      }
+      .navbar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        background: transparent;
+      }
+      .navbar-logo {
+        grid-column: 1/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .navbar-logo-img {
+        width: 160px;
+      }
+
+      /* navbar menu 1 related */
+      .navbar-menu-1 {
+        grid-column: 3/7;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+      }
+
+      .navbar-menu-1-items {
+        cursor: pointer;
+      }
+
+      .navbar-menu-1-items:hover {
+        color: orangered;
+      }
+
+      .navbar-menu-2 {
+        grid-column: 11/13;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .navbar-menu-2-items {
+        cursor: pointer;
+      }
+
+      .navbar-menu-2-button {
+        cursor: pointer;
+        border: 0;
+        padding: 10px 20px;
+        /* 10px - top and bottom  20px - left and right */
+        color: rgb(214, 0, 47);
+        font-weight: 600;
+        border-radius: 5px;
+        letter-spacing: 1px;
+      }
+      /* start something epic text box section */
+      .text-box {
+        margin-top: 16%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .text-box-heading {
+        font-size: 120px;
+      }
+
+      .text-box-button {
+        border: 0;
+        font-size: 16px;
+        margin-top: 30px;
+        color: #fff;
+        background: linear-gradient(45deg, rgb(253, 38, 122), rgb(255, 96, 54));
+        padding: 15px 50px;
+        /* 15px top and bottom padding */
+        /* 50px right and left side padding */
+        border-radius: 50px;
+      }
+
+      /* testimonials section */
+      .testimonials {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .card {
+        border: 1px solid #d4d8de;
+        padding: 25px;
+        border-radius: 5px;
+        box-shadow: rgba(101, 110, 123, 0.12) 0px 2px 6px 0px;
+      }
+      .card-title {
+        font-size: 20px;
+        margin-bottom: 7px;
+      }
+      .card-content {
+        margin-top: 12px;
+        color: #505965;
+        line-height: 21px;
+      }
+    </style>
+    <title>Tinder Clone</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="navbar-logo">
+          <img
+            src="https://drive.google.com/uc?id=1W83StbTMiJ6rqvdF69_WfJ00DWyT5UKo"
+            alt="tinder-logo"
+            class="navbar-logo-img"
+          />
+        </div>
+        <div class="navbar-menu-1">
+          <div class="navbar-menu-1-items">Products</div>
+          <div class="navbar-menu-1-items">Learn</div>
+          <div class="navbar-menu-1-items">Safety</div>
+          <div class="navbar-menu-1-items">Support</div>
+          <div class="navbar-menu-1-items">Download</div>
+        </div>
+        <div class="navbar-menu-2">
+          <div class="navbar-menu-2-items">ENGLISH(UK)</div>
+          <button class="navbar-menu-2-button">Log in</button>
+        </div>
+      </div>
+      <div class="text-box">
+        <h1 class="text-box-heading">Start something epic.</h1>
+        <button class="text-box-button">Create account</button>
+      </div>
+    </div>
+    <div class="testimonials">
+      <div class="card">
+        <h1 class="card-title">Gabriel & Fiance</h1>
+        <hr class="card-divider" />
+        <p class="card-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+          pellentesque nisl vel elementum fermentum. Quisque consectetur eu ex a
+          congue. Vivamus ac urna imperdiet ante molestie viverra. Donec nec
+          sagittis urna. Nam efficitur libero diam, eget rutrum velit efficitur
+          id. Ut eget ornare magna. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Nunc dictum efficitur ante
+          eu varius. Maecenas non turpis eget urna maximus sollicitudin. Mauris
+          vitae lectus eu metus convallis sodales quis id odio. Maecenas
+          molestie eros sed sapien accumsan, sed eleifend nibh egestas. Aliquam
+          vel nisl consequat, eleifend lorem vel, pellentesque risus. Vivamus
+          euismod tortor vel enim viverra tempor. Morbi fermentum ante a lacus
+          varius vehicula.
+        </p>
+      </div>
+      <div class="card">
+        <h1 class="card-title">Shannon Escobar</h1>
+        <hr />
+        <p class="card-content">
+          Sed vestibulum velit quam, in aliquam dolor accumsan et. Nam interdum
+          pharetra tellus eu sollicitudin. Vivamus non iaculis dui. Pellentesque
+          vitae tellus ornare, rutrum sapien vel, porta risus. Pellentesque
+          viverra felis at malesuada lacinia. Phasellus vestibulum aliquet erat
+          sed pharetra. Proin vel turpis in arcu malesuada tincidunt eget a
+          nisi. Vestibulum eu consectetur metus, eu varius nibh. Cras lobortis
+          vel ex at consequat. Integer et finibus nisl. Nam ornare vestibulum
+          ante. Nulla facilisi.
+        </p>
+      </div>
+      <div class="card">
+        <h1 class="card-title">Rebecca Stephenson</h1>
+        <hr />
+        <p class="card-content">
+          Nulla facilisi. Sed euismod ut ex nec luctus. Nulla facilisi. Donec
+          dictum nisi id condimentum viverra. Proin sed cursus velit, vitae
+          scelerisque neque. Proin posuere, diam vitae accumsan pellentesque,
+          diam ex euismod lorem, nec aliquet libero tortor nec est. Aliquam erat
+          volutpat. Aliquam ultrices rhoncus purus vitae laoreet. Proin
+          imperdiet neque ac orci pellentesque, ac dapibus velit eleifend.
+          Mauris sit amet ligula tellus. Aenean dignissim magna a commodo
+          scelerisque. Aliquam maximus odio id turpis finibus finibus.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
